@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Map and Weather App</h1>
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter a location">
+            <button onclick="searchLocation()">Search</button>
+        </div>
+        <div id="map"></div>
+        <div id="weather"></div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCky6S6YE2wHVkv6CAmfGx6ji7-XxQ7kLg&callback=initMap" async defer></script>
+    <script src="app.js"></script>
+</body>
+</html>
