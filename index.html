@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map and Weather App</title>
+    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Map and Weather App</h1>
+        <!-- Search bar and button for user input -->
         <div class="search-container">
             <input type="text" id="location-input" placeholder="Enter a location">
             <button onclick="searchLocation()">Search</button>
         </div>
+        <!-- Div to display the Google Map -->
         <div id="map"></div>
+        <!-- Div to display the weather information -->
         <div id="weather"></div>
     </div>
 
+    <!-- Google Maps API script with callback to initialize the map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCky6S6YE2wHVkv6CAmfGx6ji7-XxQ7kLg&callback=initMap" async defer></script>
+    <!-- Link to the external JavaScript file -->
     <script src="app.js"></script>
 </body>
 </html>
