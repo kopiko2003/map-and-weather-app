@@ -1,0 +1,1 @@
+This project, “Map and Weather App”, demonstrates the integration of the Google Maps API and OpenWeatherMap API to allow users to search for a location, view it on a map, and receive real-time weather information.
