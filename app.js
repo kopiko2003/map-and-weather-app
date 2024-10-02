@@ -16,6 +16,13 @@ function searchLocation() {
     geocodeAddress(location);
 }
 
+// Function to handle Enter key press
+function handleKeyDown(event) {
+    if (event.key === 'Enter') {
+        searchLocation();
+    }
+}
+
 // Function to geocode the address and update the map
 function geocodeAddress(address) {
     geocoder.geocode({ 'address': address }, (results, status) => {
