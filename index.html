@@ -12,7 +12,7 @@
         <h1>Map and Weather App</h1>
         <!-- Search bar and button for user input -->
         <div class="search-container">
-            <input type="text" id="location-input" placeholder="Enter a location">
+            <input type="text" id="location-input" placeholder="Enter a location" onkeydown="handleKeyDown(event)">
             <button onclick="searchLocation()">Search</button>
         </div>
         <!-- Div to display the Google Map -->
